@@ -1,0 +1,85 @@
+body {
+    background: url('login1.jpg') center/cover fixed;
+    color: dark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    perspective: 1000px; /* Perspective for the 3D effect */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 75%;
+    padding: 8px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.login-box,
+.card {
+    background:transparent;
+    border: 5px solid whitesmoke;
+    width: 300px;
+    height: 250px;
+    transform-style: preserve-3d; /* 3D effect */
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-box:hover,
+.card:hover {
+    transform: scale(1.05) rotateX(10deg) rotateY(10deg);
+}
+
+.login-logo a,
+.login-box-msg,
+.btn-primary {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.login-logo a:hover,
+.login-box-msg:hover,
+.btn-primary:hover {
+    transform: scale(1.1) rotateZ(5deg);
+}
+
+.btn-info {
+    background-color: whitesmoke;
+    border-color: #f4f5f6;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-info:hover {
+    background-color: rgb(92, 92, 162);
+    border-color: #18191c;
+    transform: scale(1.1) rotate(-5deg);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.pulse {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,29 @@
+/* style.css */
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.login-box,
+.card {
+    background: #333;
+    border: 1px solid #555;
+}
+
+.login-logo a,
+.login-box-msg,
+.btn-primary {
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Add any additional styling as needed */
